@@ -77,5 +77,3 @@ end
 Remember, RSpec forms the foundation for your tests, while Capybara and Selenium enhance the testing process by enabling realistic user interactions within a web browser.
 
 In summary, RSpec is your trusty Ruby-based testing companion, Capybara empowers you to interact with your website as if you were a user, and Selenium brings the real browser experience to your tests. By uniting these tools, you can ensure the robustness and reliability of your web application.
-
-Feel free to adapt this guidance and example to suit your testing needs and project requirements.
