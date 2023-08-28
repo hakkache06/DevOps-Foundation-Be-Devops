@@ -7,10 +7,10 @@ services:
       - 80:80
   unit-test :
     volumes:
-      - '$PWD:/app'
+      - "$PWD:/app"
     build:
       context: .
       dockerfile: rspec.dockerfile
     command:
     - --pattern
-    - spec/unit/*_spec.rb
+    - /app/spec/unit/*_spec.rb
