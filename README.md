@@ -37,3 +37,45 @@ docker-compose up
 - Docker containers virtualize operating system kernels, ensuring uniform runtime across host systems.
 - Docker provides a virtualized operating system kernel for creating reusable application environments. Unlike containers, virtual machines emulate hardware components.
 
+# Part 2: Testing Applications with Capybara, RSpec, and Selenium
+
+## Testing Your Dockerized Website
+
+Once your website is operational within a Docker container, the next step is to craft automated tests to ensure its functionality remains intact.
+
+### Automated Tests with RSpec, Capybara, and Selenium
+
+Incorporate the power of automated testing by combining RSpec, Capybara, and Selenium. These tools work together to streamline your testing process and ensure your application performs as expected.
+
+#### RSpec: A Clear and Simple Testing Framework
+
+RSpec, a testing framework rooted in Ruby, offers a readable and comprehensible syntax for crafting tests. This simplifies the process of understanding and troubleshooting tests.
+
+#### Capybara: Interacting with Web Applications
+
+Capybara plays a vital role in this testing ecosystem. It introduces the concept of a web driver, enabling the creation of a browser-like environment for interacting with your website. This is instrumental in testing various user interactions and workflows.
+
+#### Selenium: Powering Real Web Browsers
+
+Selenium serves as a web driver within Capybara. It goes a step further by simulating the behavior of a real web browser, providing an accurate representation of how users would interact with your website.
+
+### Sample RSpec File
+
+To illustrate, here's an example of an RSpec test using Capybara:
+
+```ruby
+require "capybara"
+require 'capybara/dsl'
+
+describe "Example Age Rendering Test" do 
+    it "should display the explore logo" do
+        # Your test logic using Capybara goes here
+    end
+end
+```
+
+Remember, RSpec forms the foundation for your tests, while Capybara and Selenium enhance the testing process by enabling realistic user interactions within a web browser.
+
+In summary, RSpec is your trusty Ruby-based testing companion, Capybara empowers you to interact with your website as if you were a user, and Selenium brings the real browser experience to your tests. By uniting these tools, you can ensure the robustness and reliability of your web application.
+
+Feel free to adapt this guidance and example to suit your testing needs and project requirements.
